@@ -15,10 +15,6 @@
 
 **Task 2 – Social Media Platform**
 
-🌍 **Live Demo**
-
-### **https://social-media-connect-platform.netlify.app/**
-
 </div>
 
 ---
@@ -410,11 +406,6 @@ Aiven MySQL Cloud
 
 ---
 
-# 🌐 Live Demo
-
-## https://social-media-connect-platform.netlify.app/
-
----
 
 # 👨‍💻 Author
 
