@@ -1,3 +1,7 @@
+const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+
+
+
 const imageInput =
 document.getElementById("profileImage");
 
@@ -64,7 +68,7 @@ async function loadProfile(){
 
         const response =
         await fetch(
-        "http://localhost:5000/api/users/profile",
+        `${API_URL}/api/users/profile`,
         {
 
 
@@ -102,7 +106,7 @@ async function loadProfile(){
 
 
                 preview.src =
-                `http://localhost:5000/uploads/${data.user.profile_image}`;
+                `${API_URL}/uploads/${data.user.profile_image}`;
 
 
             }
@@ -149,7 +153,7 @@ try{
 
 const profileResponse =
 await fetch(
-"http://localhost:5000/api/users/profile",
+`${API_URL}/api/users/profile`,
 {
 
 
@@ -212,7 +216,7 @@ if(imageInput.files.length > 0){
 
     const imageResponse =
     await fetch(
-    "http://localhost:5000/api/users/profile/image",
+    `${API_URL}/api/users/profile/image`,
     {
 
 

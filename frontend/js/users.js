@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+
 
 const token = localStorage.getItem("token");
 
@@ -52,7 +53,7 @@ function renderUsers(users){
                 <img
     src="${
         user.profile_image
-        ? `http://localhost:5000/uploads/${user.profile_image}`
+        ? `${API_URL}/uploads/${user.profile_image}`
         : "https://via.placeholder.com/80"
     }"
     class="user-avatar"

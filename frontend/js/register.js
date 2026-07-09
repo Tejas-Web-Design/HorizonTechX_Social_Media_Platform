@@ -1,3 +1,7 @@
+const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+
+
+
 const registerForm =
 document.getElementById("registerForm");
 
@@ -31,7 +35,7 @@ async(e)=>{
 
         const response =
         await fetch(
-        "http://localhost:5000/api/auth/register",
+        `${API_URL}/api/auth/register`,
         {
 
             method:"POST",

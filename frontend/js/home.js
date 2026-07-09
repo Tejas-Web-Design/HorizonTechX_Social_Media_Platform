@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+
 
 const token = localStorage.getItem("token");
 
@@ -115,7 +116,7 @@ container.innerHTML = `
 
         src="${
             post.profile_image
-            ? `http://localhost:5000/uploads/${post.profile_image}`
+            ? `${API_URL}/uploads/${post.profile_image}`
             : "https://via.placeholder.com/50"
         }"
 
@@ -545,7 +546,7 @@ async function loadComments(postId){
 
                     src="${
                         comment.profile_image
-                        ? `http://localhost:5000/uploads/${comment.profile_image}`
+                        ? `${API_URL}/uploads/${comment.profile_image}`
                         : "https://via.placeholder.com/40"
                     }"
 

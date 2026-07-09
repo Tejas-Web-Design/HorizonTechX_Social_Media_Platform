@@ -1,3 +1,8 @@
+const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+
+
+
+
 const token = localStorage.getItem("token");
 
 
@@ -23,7 +28,7 @@ async function loadProfile(){
 
         const response =
         await fetch(
-        "http://localhost:5000/api/users/profile",
+        `${API_URL}/api/users/profile`,
         {
 
             method:"GET",
@@ -53,7 +58,7 @@ async function loadProfile(){
 
 profileImage.src =
 user.profile_image
-? `http://localhost:5000/uploads/${user.profile_image}`
+? `${API_URL}/uploads/${user.profile_image}`
 : "https://via.placeholder.com/150";
 
 profileData.innerHTML = `
@@ -117,7 +122,7 @@ async function loadPostCount(userId){
 
     const response = await fetch(
 
-        `http://localhost:5000/api/posts/count/${userId}`
+        `${API_URL}/api/posts/count/${userId}`
 
     );
 
@@ -164,7 +169,7 @@ async function loadFollowers(userId){
 
     const response = await fetch(
 
-        `http://localhost:5000/api/follow/followers/${userId}`
+        `${API_URL}/api/follow/followers/${userId}`
 
     );
 
@@ -178,7 +183,7 @@ async function loadFollowing(userId){
 
     const response = await fetch(
 
-        `http://localhost:5000/api/follow/following/${userId}`
+        `${API_URL}/api/follow/following/${userId}`
 
     );
 
@@ -196,7 +201,7 @@ async function loadRecentPosts(userId){
 
         const response = await fetch(
 
-            "http://localhost:5000/api/posts"
+            "${API_URL}/api/posts"
 
         );
 
