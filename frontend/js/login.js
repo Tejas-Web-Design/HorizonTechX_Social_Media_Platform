@@ -32,7 +32,7 @@ async(e)=>{
 
         const response =
         await fetch(
-        `${API_URL}/api/auth/login`,
+        `${API_URL}/auth/login`,
         {
 
 

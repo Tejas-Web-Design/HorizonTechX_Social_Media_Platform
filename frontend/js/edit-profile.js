@@ -68,7 +68,7 @@ async function loadProfile(){
 
         const response =
         await fetch(
-        `${API_URL}/api/users/profile`,
+        `${API_URL}/users/profile`,
         {
 
 
@@ -153,7 +153,7 @@ try{
 
 const profileResponse =
 await fetch(
-`${API_URL}/api/users/profile`,
+`${API_URL}/users/profile`,
 {
 
 
@@ -216,7 +216,7 @@ if(imageInput.files.length > 0){
 
     const imageResponse =
     await fetch(
-    `${API_URL}/api/users/profile/image`,
+    `${API_URL}/users/profile/image`,
     {
 
 

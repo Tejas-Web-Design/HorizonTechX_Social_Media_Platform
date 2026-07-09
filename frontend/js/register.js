@@ -35,7 +35,7 @@ async(e)=>{
 
         const response =
         await fetch(
-        `${API_URL}/api/auth/register`,
+        `${API_URL}/auth/register`,
         {
 
             method:"POST",

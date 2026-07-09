@@ -28,7 +28,7 @@ async function loadProfile(){
 
         const response =
         await fetch(
-        `${API_URL}/api/users/profile`,
+        `${API_URL}/users/profile`,
         {
 
             method:"GET",
@@ -122,7 +122,7 @@ async function loadPostCount(userId){
 
     const response = await fetch(
 
-        `${API_URL}/api/posts/count/${userId}`
+        `${API_URL}/posts/count/${userId}`
 
     );
 
@@ -169,7 +169,7 @@ async function loadFollowers(userId){
 
     const response = await fetch(
 
-        `${API_URL}/api/follow/followers/${userId}`
+        `${API_URL}/follow/followers/${userId}`
 
     );
 
@@ -183,7 +183,7 @@ async function loadFollowing(userId){
 
     const response = await fetch(
 
-        `${API_URL}/api/follow/following/${userId}`
+        `${API_URL}/follow/following/${userId}`
 
     );
 
@@ -201,7 +201,7 @@ async function loadRecentPosts(userId){
 
         const response = await fetch(
 
-            "${API_URL}/api/posts"
+            "${API_URL}/posts"
 
         );
 
