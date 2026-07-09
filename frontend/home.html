@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🌐 SocialConnect</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+<div class="bg-blur blur-1"></div>
+
+<div class="bg-blur blur-2"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        🌐 SocialConnect
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="Search posts, users..."
+    >
+
+    </div>
+
+    <div class="nav-links">
+
+        <button id="profileBtn">
+
+            👤 My Profile
+
+        </button>
+
+        <button id="usersBtn">
+
+            👥 People
+
+        </button>
+
+        <button id="logoutBtn">
+
+            🚪 Logout
+
+        </button>
+
+    </div>
+
+</nav>
+
+<main class="home-container">
+
+    <aside class="left-sidebar">
+
+        <div class="glass-card">
+
+            <h3>
+
+                Welcome 👋
+
+            </h3>
+
+            <p>
+
+                Stay connected with your friends,
+                create posts, like content and
+                join the conversation.
+
+            </p>
+
+        </div>
+
+        <div class="glass-card">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li>🏠 Home Feed</li>
+
+                <li>👤 My Profile</li>
+
+                <li>👥 Discover People</li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+    <section class="feed">
+                <div class="create-post-card">
+
+            <div class="create-post-header">
+
+                <div class="user-avatar">
+
+                    👤
+
+                </div>
+
+                <div>
+
+                    <h2>
+
+                        Create a New Post
+
+                    </h2>
+
+                    <p>
+
+                        Share your thoughts with the SocialConnect community.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="create-post-body">
+
+                <textarea
+
+                    id="caption"
+
+                    placeholder="What's on your mind today?"
+
+                    maxlength="300"
+
+                ></textarea>
+
+            </div>
+
+            <div class="post-footer">
+
+                <div class="post-tools">
+
+                    <span>
+
+                        📝 Express Yourself
+
+                    </span>
+
+                </div>
+
+                <div class="post-actions">
+
+                    <small id="charCount">
+
+                        0 / 300
+
+                    </small>
+
+                    <button
+
+                        id="postBtn"
+
+                        disabled
+
+                    >
+
+                        🚀 Share Post
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <section
+
+            id="postsContainer"
+
+            class="posts-feed"
+
+        >
+
+            <div class="loading-card">
+
+                <div class="loader"></div>
+
+                <p>
+
+                    Loading your feed...
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </section>
+        <aside class="right-sidebar">
+
+        <div class="glass-card">
+
+            <h3>
+
+                🔥 Trending
+
+            </h3>
+
+            <ul>
+
+                <li>#WebDevelopment</li>
+
+                <li>#JavaScript</li>
+
+                <li>#NodeJS</li>
+
+                <li>#SocialConnect</li>
+
+                <li>#Programming</li>
+
+            </ul>
+
+        </div>
+
+        <div class="glass-card">
+
+            <h3>
+
+                📊 Platform Stats
+
+            </h3>
+
+            <div class="stats">
+
+                <div class="stat-item">
+
+                    <h4>10K+</h4>
+
+                    <span>Members</span>
+
+                </div>
+
+                <div class="stat-item">
+
+                    <h4>25K+</h4>
+
+                    <span>Posts</span>
+
+                </div>
+
+                <div class="stat-item">
+
+                    <h4>50K+</h4>
+
+                    <span>Comments</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="glass-card">
+
+            <h3>
+
+                💡 Community Tips
+
+            </h3>
+
+            <p>
+
+                ✔ Be respectful to others.
+
+            </p>
+
+            <p>
+
+                ✔ Share meaningful content.
+
+            </p>
+
+            <p>
+
+                ✔ Engage through likes and comments.
+
+            </p>
+
+            <p>
+
+                ✔ Grow your network by following people.
+
+            </p>
+
+        </div>
+
+    </aside>
+
+</main>
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 SocialConnect • Built with ❤️ using HTML, CSS, JavaScript, Express.js & MySQL
+
+    </p>
+
+</footer>
+
+<script src="js/home.js"></script>
+
+</body>
+
+</html>

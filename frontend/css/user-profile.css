@@ -1,0 +1,1443 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+:root{
+
+    --primary:#6366f1;
+    --secondary:#8b5cf6;
+    --accent:#06b6d4;
+
+    --dark:#020617;
+    --dark2:#0f172a;
+
+    --text:#cbd5e1;
+    --white:#ffffff;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #1e1b4b
+    );
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   BACKGROUND BLUR
+========================================== */
+
+.bg-blur{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    z-index:-1;
+
+}
+
+.blur-1{
+
+    width:320px;
+
+    height:320px;
+
+    background:#7c3aed;
+
+    top:-120px;
+
+    left:-120px;
+
+    opacity:.35;
+
+}
+
+.blur-2{
+
+    width:320px;
+
+    height:320px;
+
+    background:#2563eb;
+
+    right:-120px;
+
+    bottom:-120px;
+
+    opacity:.35;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:rgba(15,23,42,.75);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.nav-links button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.nav-links button:hover{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+}
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.profile-page{
+
+    width:min(1200px,92%);
+
+    margin:45px auto;
+
+}
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.30);
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ==========================================
+   COVER PHOTO
+========================================== */
+
+.cover-photo{
+
+    height:220px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #6366f1,
+
+        #8b5cf6,
+
+        #2563eb
+
+    );
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.cover-photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.12),
+
+        transparent
+
+    );
+
+}
+
+/* ==========================================
+   PROFILE INFO
+========================================== */
+
+.profile-info{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:35px;
+
+    padding:0 40px 35px;
+
+    margin-top:-75px;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+/* ==========================================
+   PROFILE AVATAR
+========================================== */
+
+.profile-avatar{
+
+    width:160px;
+
+    height:160px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:6px solid #0f172a;
+
+    background:#ffffff;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
+
+    flex-shrink:0;
+
+}
+
+.profile-avatar img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.profile-avatar:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   PROFILE DETAILS
+========================================== */
+
+.profile-details{
+
+    flex:1;
+
+    padding-bottom:12px;
+
+}
+
+.profile-details h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   USER PROFILE DATA
+========================================== */
+
+#userProfile{
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+#userProfile h3{
+
+    font-size:30px;
+
+    color:#ffffff;
+
+    margin-bottom:12px;
+
+    font-weight:700;
+
+}
+
+#userProfile p{
+
+    margin-bottom:10px;
+
+    color:#cbd5e1;
+
+    word-break:break-word;
+
+}
+
+#userProfile p:last-child{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================
+   PROFILE STATS
+========================================== */
+
+.profile-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    padding:0 40px 40px;
+
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:28px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    background:rgba(99,102,241,.12);
+
+    border-color:rgba(99,102,241,.35);
+
+    box-shadow:0 18px 40px rgba(99,102,241,.20);
+
+}
+
+.stat-card h3{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   PROFILE ACTIONS
+========================================== */
+
+.profile-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:0 40px 45px;
+
+}
+
+/* ==========================================
+   FOLLOW BUTTON
+========================================== */
+
+#followBtn{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:16px 42px;
+
+    border-radius:16px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    box-shadow:0 15px 35px rgba(99,102,241,.35);
+
+    transition:.35s;
+
+}
+
+#followBtn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(99,102,241,.45);
+
+    letter-spacing:.5px;
+
+}
+
+#followBtn:active{
+
+    transform:scale(.97);
+
+}
+
+/* ==========================================
+   FOLLOWING STATE
+========================================== */
+
+#followBtn.following{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #10b981,
+
+        #059669
+
+    );
+
+    box-shadow:0 15px 35px rgba(16,185,129,.35);
+
+}
+
+#followBtn.following:hover{
+
+    box-shadow:0 20px 45px rgba(16,185,129,.45);
+
+}
+
+/* ==========================================
+   DISABLED BUTTON
+========================================== */
+
+#followBtn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+/* ==========================================
+   USER POSTS SECTION
+========================================== */
+
+.profile-posts{
+
+    margin-top:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   POSTS CONTAINER
+========================================== */
+
+#userPostsContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* ==========================================
+   POST CARD
+========================================== */
+
+.profile-post-card{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    transition:.35s;
+
+}
+
+.profile-post-card:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(99,102,241,.10);
+
+    border-color:rgba(99,102,241,.35);
+
+    box-shadow:0 18px 40px rgba(99,102,241,.18);
+
+}
+
+/* ==========================================
+   POST IMAGE
+========================================== */
+
+.profile-post-card img{
+
+    width:100%;
+
+    max-height:350px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+   POST TEXT
+========================================== */
+
+.post-caption{
+
+    color:#f8fafc;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    margin-bottom:16px;
+
+}
+
+/* ==========================================
+   POST DATE
+========================================== */
+
+.profile-post-card small{
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   NO POSTS
+========================================== */
+
+.no-posts{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-size:17px;
+
+    padding:45px;
+
+}
+
+/* ==========================================
+   LOADING CARD
+========================================== */
+
+.loading-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:50px;
+
+}
+
+.loading-card p{
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   LOADER
+========================================== */
+
+.loader{
+
+    width:46px;
+
+    height:46px;
+
+    border:4px solid rgba(255,255,255,.15);
+
+    border-top:4px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+/* ==========================================
+   GLASS SHINE EFFECT
+========================================== */
+
+.profile-card{
+
+    position:relative;
+
+}
+
+.profile-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:45%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.10),
+
+        transparent
+
+    );
+
+    transition:.9s;
+
+    pointer-events:none;
+
+}
+
+.profile-card:hover::before{
+
+    left:150%;
+
+}
+
+/* ==========================================
+   CARD HOVER
+========================================== */
+
+.profile-card{
+
+    transition:.35s;
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 30px 70px rgba(99,102,241,.18);
+
+}
+
+.profile-posts{
+
+    transition:.35s;
+
+}
+
+.profile-posts:hover{
+
+    box-shadow:0 25px 60px rgba(99,102,241,.15);
+
+}
+
+/* ==========================================
+   AVATAR EFFECT
+========================================== */
+
+.profile-avatar{
+
+    transition:.4s;
+
+}
+
+.profile-avatar:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+        0 0 25px rgba(99,102,241,.35),
+
+        0 0 60px rgba(139,92,246,.18);
+
+}
+
+/* ==========================================
+   LOGO EFFECT
+========================================== */
+
+.logo{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #ffffff,
+
+        #c4b5fd,
+
+        #60a5fa
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   BUTTON EFFECTS
+========================================== */
+
+#followBtn{
+
+    transition:all .35s ease;
+
+}
+
+.nav-links button{
+
+    transition:all .35s ease;
+
+}
+
+.nav-links button:hover{
+
+    letter-spacing:.4px;
+
+}
+
+#followBtn:hover{
+
+    filter:brightness(1.05);
+
+}
+
+/* ==========================================
+   IMAGE DEFAULT
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    user-select:none;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   PAGE SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:linear-gradient(
+
+        #7c3aed,
+
+        #2563eb
+
+    );
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+/* ==========================================
+   LARGE TABLETS
+========================================== */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        padding:18px 25px;
+
+    }
+
+    .profile-page{
+
+        width:95%;
+
+    }
+
+    .profile-info{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+        margin-top:-65px;
+
+    }
+
+    .profile-details{
+
+        padding-bottom:0;
+
+    }
+
+    .profile-details h2{
+
+        font-size:32px;
+
+    }
+
+    .profile-stats{
+
+        grid-template-columns:repeat(3,1fr);
+
+        gap:18px;
+
+    }
+
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:18px;
+
+    }
+
+    .nav-links{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .nav-links button{
+
+        flex:1;
+
+        min-width:140px;
+
+    }
+
+    .profile-page{
+
+        margin:30px auto;
+
+    }
+
+    .cover-photo{
+
+        height:180px;
+
+    }
+
+    .profile-avatar{
+
+        width:130px;
+
+        height:130px;
+
+    }
+
+    .profile-details h2{
+
+        font-size:28px;
+
+    }
+
+    #userProfile h3{
+
+        font-size:24px;
+
+    }
+
+    .profile-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-actions{
+
+        padding:0 25px 35px;
+
+    }
+
+    #followBtn{
+
+        width:100%;
+
+    }
+
+    .profile-posts{
+
+        padding:25px;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:576px){
+
+    .logo{
+
+        font-size:24px;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+    }
+
+    .nav-links button{
+
+        width:100%;
+
+    }
+
+    .profile-card{
+
+        border-radius:20px;
+
+    }
+
+    .profile-info{
+
+        padding:0 20px 30px;
+
+    }
+
+    .profile-avatar{
+
+        width:110px;
+
+        height:110px;
+
+        border-width:4px;
+
+    }
+
+    .profile-details h2{
+
+        font-size:24px;
+
+    }
+
+    #userProfile h3{
+
+        font-size:22px;
+
+    }
+
+    #userProfile p{
+
+        font-size:14px;
+
+    }
+
+    .stat-card{
+
+        padding:20px;
+
+    }
+
+    .stat-card h3{
+
+        font-size:30px;
+
+    }
+
+    .section-title h2{
+
+        font-size:24px;
+
+    }
+
+    .profile-post-card{
+
+        padding:18px;
+
+    }
+
+    .post-caption{
+
+        font-size:15px;
+
+    }
+
+}
+
+/* ==========================================
+   EXTRA SMALL DEVICES
+========================================== */
+
+@media(max-width:380px){
+
+    .profile-page{
+
+        width:96%;
+
+    }
+
+    .cover-photo{
+
+        height:150px;
+
+    }
+
+    .profile-avatar{
+
+        width:95px;
+
+        height:95px;
+
+    }
+
+    .profile-details h2{
+
+        font-size:21px;
+
+    }
+
+    .section-title h2{
+
+        font-size:20px;
+
+    }
+
+    #followBtn{
+
+        font-size:14px;
+
+        padding:14px;
+
+    }
+
+}
+
+/* ==========================================
+   FINAL POLISH
+========================================== */
+
+.profile-card,
+.profile-posts,
+.profile-post-card,
+.stat-card{
+
+    transition:all .35s ease;
+
+}
+
+.profile-post-card:hover .post-caption{
+
+    color:#ffffff;
+
+}
+
+.profile-post-card{
+
+    cursor:default;
+
+}
+
+.profile-card *{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.logo{
+
+    user-select:none;
+
+}
+
+.footer{
+
+    margin-top:60px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    background:rgba(15,23,42,.65);
+
+    backdrop-filter:blur(20px);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer p{
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+}
+
+input:focus,
+button:focus{
+
+    outline:none;
+
+}

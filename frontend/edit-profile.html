@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>🌐 Edit Profile | SocialConnect</title>
+
+    <link rel="stylesheet" href="css/edit-profile.css">
+
+</head>
+
+<body>
+
+<div class="bg-blur blur-1"></div>
+
+<div class="bg-blur blur-2"></div>
+
+<div class="edit-page">
+
+    <div class="edit-card">
+
+        <div class="card-header">
+
+            <h1>
+
+                ✏️ Edit Profile
+
+            </h1>
+
+            <p>
+
+                Update your profile information and personalize your account.
+
+            </p>
+
+        </div>
+
+        <form id="editProfileForm">
+
+            <div class="image-section">
+
+                <div class="image-preview">
+
+                    <img
+
+                        id="previewImage"
+
+                        src="https://via.placeholder.com/150"
+
+                        alt="Profile Image"
+
+                    >
+
+                </div>
+
+                <label
+                    for="profileImage"
+                    class="upload-label">
+
+                    📷 Choose Profile Picture
+
+                </label>
+
+                <input
+
+                    type="file"
+
+                    id="profileImage"
+
+                    accept="image/*"
+
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Username
+
+                </label>
+
+                <input
+
+                    type="text"
+
+                    id="username"
+
+                    placeholder="Enter your username"
+
+                    required
+
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+
+                    Bio
+
+                </label>
+
+                <textarea
+
+                    id="bio"
+
+                    rows="6"
+
+                    placeholder="Tell everyone something about yourself..."
+
+                ></textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                class="save-btn">
+
+                💾 Save Changes
+
+            </button>
+
+            <button
+                type="button"
+                class="cancel-btn"
+                onclick="location.href='profile.html'">
+
+                ← Back to Profile
+
+            </button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+<script src="js/edit-profile.js"></script>
+
+</html>
