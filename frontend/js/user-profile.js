@@ -1,4 +1,5 @@
-const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
+const BACKEND_URL = "https://socialconnect-backend-g784.onrender.com";
+const API_URL = `${BACKEND_URL}/api`;
 
 
 const token = localStorage.getItem("token");
@@ -46,7 +47,7 @@ async function loadUser(){
 
     document.getElementById("profileImage").src =
 user.profile_image
-? `${API_URL}/uploads/${user.profile_image}`
+? `${BACKEND_URL}/uploads/${user.profile_image}`
 : "https://via.placeholder.com/150";
 
 document.getElementById("userProfile").innerHTML = `

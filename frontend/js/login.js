@@ -1,7 +1,7 @@
-const API_URL = "https://socialconnect-backend-g784.onrender.com/api";
 
 
-
+const BACKEND_URL = "https://socialconnect-backend-g784.onrender.com";
+const API_URL = `${BACKEND_URL}/api`;
 
 const loginForm =
 document.getElementById("loginForm");
